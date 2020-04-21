@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Shobhit's Homepage</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+	* {
+  	box-sizing: border-box;
+	}
+
+	body {
+  	font-family: Arial, Helvetica, sans-serif;
+	}
+
+/* Style the header */
+	header {
+	  background-color: red;
+	  padding: 15px;
+	  text-align: left;
+	  font-size: 20px;
+	  color: white;
+	}
+
+/* Create two columns/boxes that floats next to each other */
+	#side_panel{
+	  float: left;
+	  width: 100px;
+	  height: 500px;
+	  background: lightblue;
+	  padding: 20px;
+	}
+
+/* Style the list inside the menu */
+	nav ul {
+	  list-style-type: none;
+	  padding: 0;
+	}
+
+	article {
+	  float: left;
+	  padding: 20px;
+	  width: 70%;
+	  background-color: #f1f1f1;
+	  height: 300px; /* only for demonstration, should be removed */
+	}
+
+	/* Clear floats after the columns */
+	section:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+
+	/* Style the footer */
+	footer {
+	  background-color: lightblue;
+	  padding: 10px;
+	  text-align: center;
+	  color: white;
+	}
+
+	/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+	@media (max-width: 600px) {
+	  nav, article {
+	    width: 100%;
+	    height: auto;
+	  }
+	}
+
+	.soc_media_logo{
+		height: 25px;
+		width: 25px;
+	}
+	</style>
+</head>
+<body>
+
+
+	<header>
+		<h2>Shobhit's Homepage</h2>		
+	</header>
+
+	<section>
+	  <nav id="side_panel">
+	    <ul>
+	      <li><a href="gallery.html">Gallery</a></li>
+	      <li><a href="resume.html">Resume</a></li>
+	      <li><a href="favorites.html">Favorites</a></li>
+	    </ul>
+	  </nav>
+	</section>
+
+	<footer>
+	  <p>Thanks for checking in! You can hit me up on the below listed</p>
+	  <nav>
+	  	<a href="https://in.linkedin.com/in/shobhitsharma" target="_blank"><img class="soc_media_logo" src="linkedin_logo.png"></a>
+	  	<a href="https://twitter.com/ss87original" target="_blank"><img class="soc_media_logo" src="twitter_logo.png"></a>
+	  </nav>
+	</footer>
+
+</body>
+</html>
